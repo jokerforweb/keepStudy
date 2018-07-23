@@ -1,0 +1,62 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 1000px;
+  background: #eaeff3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.math-games-app {
+  height: 100%;
+  background-color: #eaeff3;
+  .frame-header {
+    height: 60px;
+    background-color: #393857;
+    color: white;
+    font-size: 18px;
+    .header-title {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      height: 60px;
+    }
+    .header-nav {
+      display: flex;
+      justify-content: center;
+      .nav-item {
+        padding: 17.5px 35px;
+        cursor: pointer;
+        &:hover {
+          background-color: #36354d;
+          font-weight: bold;
+        }
+      }
+      .nav-item-selected {
+        color: #33cc99;
+        background-color: #545368;
+        &:hover {
+          background-color: #545368 !important;
+          font-weight: normal !important;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  .frame-router {
+    height: calc(100% - 105px);
+    transition: all 0.3s;
+    display: flex;
+  }
+  .frame-footer {
+    text-align: center;
+    height: 45px;
+    line-height: 30px;
+    flex: auto;
+    font-family: Times New Roman, 宋体, serif;
+  }
+}

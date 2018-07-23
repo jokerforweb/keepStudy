@@ -1,2 +1,1 @@
-# keepStudy
-some demo
+math-games

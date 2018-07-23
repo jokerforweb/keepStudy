@@ -1,0 +1,15 @@
+<template>
+  <div class="math-games-app">
+    <header class="frame-header">
+      <span class="header-title"><b>MATHGAMES</b></span>
+      <div class="header-nav">
+        <div repeat.for="nav of navs" click.delegate="doChangeRouter(nav.id)"
+             class="nav-item ${currentNav === nav.id ? 'nav-item-selected' : ''}">${nav.name}</div>
+      </div>
+    </header>
+    <router-view class="frame-router"></router-view>
+    <footer class="frame-footer">
+      Copyright © 2018-2018 小A 版权所有
+    </footer>
+  </div>
+</template>

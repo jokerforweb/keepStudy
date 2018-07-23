@@ -1,0 +1,7 @@
+{
+  "extends": "./node_modules/aurelia-tools/.eslintrc.json",
+  "rules": {
+    "space-before-function-paren": 0,
+    "eol-last": 0
+  }
+}

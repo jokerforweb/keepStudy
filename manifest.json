@@ -1,0 +1,15 @@
+{
+  "name": "MATHGAMES",
+  "short_name": "MATHGAMES",
+  "display": "standalone",
+  "start_url": "none",
+  "theme_color": "#8888ff",
+  "background_color": "#aaaaff",
+  "icons": [
+    {
+      "src": "app.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
