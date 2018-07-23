@@ -4,13 +4,11 @@ export class Tiny {
   cards = [];
 
   constructor() {
-    this.cards.push({
-      x: 0,
-      y: 0,
-      value: 2
-    });
+    this.generateCard();
+    this.generateCard();
     document.onkeydown = (e) => {
       let keyNum = window.event ? e.keyCode :e.which;
+      this.generateCard();//TODO 移动完成之后再生成
       // 37~40 ←↑→↓
       switch (keyNum) {
         case 37:
@@ -27,5 +25,33 @@ export class Tiny {
           break;
       }
     };
+  }
+
+  generateCard() {
+    if (this.cards.length === 16) {
+      alert('Game Over!');
+    }
+    let map = new Map();
+    for(let card of this.cards) {
+      map.set(card.location, card.value);
+    }
+    let randomLocation = Math.floor(Math.random() * (16 - this.cards.length));
+    let location = 0;
+    for(let i = 0; i < 16; i++) {
+      if (!map.get(i)) {
+        if (location === randomLocation) {
+          this.cards.push({
+            location: i,
+            value: 2
+          });
+          break;
+        }
+        location++;
+      }
+    }
+  }
+
+  getYLocation(location) {
+    return Math.floor(location);
   }
 }
