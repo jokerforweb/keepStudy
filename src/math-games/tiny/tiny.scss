@@ -1,0 +1,43 @@
+.tiny {
+  width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  position: relative;
+  border: solid 2px burlywood;
+  .tiny-card {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #ff6033;
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    transition: 0.5s;
+  }
+  .location-x-0 {
+    left: 0;
+  }
+  .location-x-1 {
+    left: 100px;
+  }
+  .location-x-2 {
+    left: 200px;
+  }
+  .location-x-3 {
+    left: 300px;
+  }
+  .location-y-0 {
+    top: 0;
+  }
+  .location-y-1 {
+    top: 100px;
+  }
+  .location-y-2 {
+    top: 200px;
+  }
+  .location-y-3 {
+    top: 300px;
+  }
+}

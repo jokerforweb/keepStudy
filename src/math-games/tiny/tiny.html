@@ -1,5 +1,5 @@
 <template>
-  <wv-panel>
-    喵喵喵
-  </wv-panel>
+  <div class="tiny">
+    <div repeat.for="card of cards" class="tiny-card location-x-${card.x} location-y-${card.y}">${card.value}</div>
+  </div>
 </template>
