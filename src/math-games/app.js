@@ -9,6 +9,10 @@ export class App {
     {
       id: 'tiny',
       name: '2048'
+    },
+    {
+      id: 'time-recorder',
+      name: '时光记录仪'
     }
   ];
   currentNav;
@@ -24,7 +28,8 @@ export class App {
     config.title = 'MATHGAMES';
     config.map([
       { route: '', redirect: 'tiny' },
-      { route: ['tiny'], name: '2048', moduleId: PLATFORM.moduleName('./tiny/tiny'), nav: true, title: 'tiny' }
+      { route: ['tiny'], name: '2048', moduleId: PLATFORM.moduleName('./tiny/tiny'), nav: true, title: 'tiny' },
+      { route: ['time-recorder'], name: '时光记录仪', moduleId: PLATFORM.moduleName('./time-recorder/time-recorder'), nav: true, title: 'time-recorder' }
     ]);
   }
 

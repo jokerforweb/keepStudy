@@ -27,6 +27,10 @@ export class Tiny {
     };
   }
 
+  moveRight() {
+
+  }
+
   generateCard() {
     if (this.cards.length === 16) {
       alert('Game Over!');
