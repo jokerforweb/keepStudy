@@ -10,11 +10,13 @@
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
   <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
-  <link rel="manifest" href="manifest.json" />
+  <link rel="manifest" href="manifest.json"/>
   <base href="<%- htmlWebpackPlugin.options.metadata.baseUrl %>">
   <!-- imported CSS are concatenated and added automatically -->
 </head>
-<body aurelia-app="main">
+<body>
+<div aurelia-app="main" style="height: 100%"></div>
+<script src="./canvas-nest.min.js" color="255, 0, 0" opacity="1" count="99" zIndex="10"></script>
 <% if (htmlWebpackPlugin.options.metadata.server) { %>
 <!-- Webpack Dev Server reload -->
 <script src="/webpack-dev-server.js"></script>

@@ -148,7 +148,8 @@ const plugins = function ({template, production, server, extractCss, coverage} =
 
 
     new CopyWebpackPlugin([
-      {from: 'manifest.json', to: 'manifest.json'}
+      {from: 'manifest.json', to: 'manifest.json'},
+      {from: 'static/canvas-nest.min.js', to: 'canvas-nest.min.js'}
     ])
   ];
 };
